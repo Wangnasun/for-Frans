@@ -1,0 +1,80 @@
+
+body{background-color:black}
+h1{color:aqua}
+p{color:white}
+a{color:aliceblue}
+/*background*/
+
+.center{text-align: center;}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+grid-template-columns: 80px 100px auto 40px;
+  grid-gap: 10px;
+  background-color: black;
+  padding: 50px;
+font-family: fantasy;
+}
+
+.grid-container > div {
+  background-color: Darkgrey;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+
+}
+
+
+/*the sizes and colors of grid container*/
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+border-radius: 50px 15px 30px 5px
+}
+.item2{
+ grid-column-start: 3;
+  grid-column-end: 3;
+grid-row-start: 1;
+grid-row-end:3;
+background-image: url(images/moon.jpg);
+background-repeat:round;
+}
+.item3{
+border-radius: 15px 50px 5px 5px}
+.item4{
+border-radius: 5px 5px 30px 5px
+}
+
+.item8{
+ grid-column-start: 1;
+  grid-column-end:3;
+grid-row-start: 2;
+grid-row-end:2;
+border-radius: 5px 30px 15px 50px
+}
+
+.item5{
+border-radius: 15px 5px 5px 50px
+}
+.item6{
+border-radius: 15px 15px 30px 15px
+}
+
+#board {
+background-color:aqua
+    ;
+}
+
+#change {
+  width: 300px;
+  height: 200px;
+  background: black;
+  animation: mymove 30s infinite;
+}
+
+@keyframes mymove {
+  from {background-color: black;}
+  to {background-color: white;}
+}
